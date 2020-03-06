@@ -1,83 +1,52 @@
 <!doctype html>
 <html lang="en">
 
+    <!-- meta to links starts here -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title>Cohort | Hydrogen</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/IndieFlower-Regular.ttf">
-    <!-- Favicons -->
     <link rel="shortcut icon" href="images/MyLogoArt20200130184344.png" type="image/x-icon">
-
-    <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
 </head>
+    <!-- meta to links ends here -->
+
 
 <body>
-    <!-- Nav starts here -->
+    <!--header starts here-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <!-- <a class="navbar-brand" href="#">C-Hydrogen</a> -->
-            <a class="navbar-brand text-white font-weight-bold" href="#">C-<span
-                    style="color: orangered;">Hydrogen</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Cohort-Hydrogen">Explore</a>
-                    </li>
-                </ul>
-            </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#Cohort-Hydrogen" class="nav__link">Explore Graduates</a></li>
+                <li class="nav__item"><a href="https://fofxacademy.com" class="nav__link">Visit Fofx Academy</a></li>
+                <li class="nav__item"><a href="#Bottom" class="nav__link">Move To Bottom</a></li>
+            </ul>
         </nav>
     </header>
-    <!-- Nav ends here -->
+    <!--header ends here-->
 
     <main role="main">
         <!-- carousel starts here -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="bd-placeholder-img" width="100%" height="100%" img src="images/carousel2.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                     <rect width="100%" height="100%" fill="#777" /></img>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>1st Graduates of Fofx Academy.</h1>
-                            <p></p>
-                            <p><a class="btn btn-lg btn-primary" href="#Cohort-Hydrogen" role="button">Explore</a></p>
-                        </div>
-                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="bd-placeholder-img" width="100%" height="100%" img src="images/carousel3.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                     <rect width="100%" height="100%" fill="#777" /></img>
                     <div class="container">
-                        <div class="carousel-caption text-left text-dark">
-                            <h1>Learn About Fofx Academy.</h1>
-                            <p></p>
-                            <p><a class="btn btn-lg btn-primary" href="https://fofxacademy.com" role="button">Visit Fofx
-                                    Academy</a></p>
-                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -89,11 +58,6 @@
                     <img class="bd-placeholder-img" width="100%" height="100%" img src="images/carousel4.jpg"
                         preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                     <rect width="100%" height="100%" fill="#777" /></img>
-                    <div class="carousel-caption text-left text-dark">
-                        <h1>Discover More.</h1>
-                        <p></p>
-                        <p><a class="btn btn-lg btn-primary" href="#Bottom" role="button">Go To Bottom</a></p>
-                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -123,7 +87,7 @@
                 </div>
             </div>
             <div class="row pt-2 text-center">
-                <div class="col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle" width="300" height="300" img src="images/Thank-G.jpg"></img>
                     <h2 class="pt-3">Who I Am</h2>
                     <h5>
@@ -133,10 +97,18 @@
                         Designing a program that is truly friendly and
                         helpful to the user is my ultimate goal on every
                         project.</p>
-                    <p><a class="btn btn-secondary" href="http://thankgportfolio.netlify.com" role="button">Visit my
-                            page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                    <p>
+                        <ul class="ul-social-circle align-items-baseline">
+                            <li><a href="https://github.com/Thank-G"><span class="icon-github"></span></a></li>
+                            <li><a class="btn btn-secondary" href="http://thankgportfolio.netlify.com"
+                                    role="button">Visit
+                                    my
+                                    page &raquo;</a></li>
+                            <li><a href="mailto:bereonwuthankgod@gmail.com"><span class="icon-message"></span></a></li>
+                        </ul>
+                    </p>
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/Dami.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -148,8 +120,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/David.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -158,12 +130,21 @@
                         <p>Hi, I am <strong><span class="typed-word2"></span></strong></p>
                     </h5>
                     <p class="section__subtitle section__subtitle--intro"><strong>Full-Stack Web
-                            Developer</strong><br>I am a creative problem- solver with proactive and dynamic approach to work, I love using my skills to solve people's real life problems.
-                            </p>
-                    <p><a class="btn btn-secondary" href="https://github.com/DevoBero" role="button">Visit my page
-                            &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                            Developer</strong><br>I am a creative problem- solver with proactive and dynamic approach to
+                        work, I love using my skills to solve people's real life problems.
+                    </p>
+                    <p>
+                        <ul class="ul-social-circle align-items-baseline">
+                            <li><a href="mailto:bendavidosondu@gmail.com"><span class="icon-message"></span></a></li>
+                            <li><a class="btn btn-secondary" href="https://github.com/DevoBero" role="button">Visit
+                                    my
+                                    page &raquo;</a></li>
+                            <li><a href="https://web.facebook.com/davido.bereonwu"><span
+                                        class="icon-facebook"></span></a></li>
+                        </ul>
+                    </p>
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/moyo.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -172,8 +153,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/Preciouse.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -182,8 +163,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/Yinka.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -192,8 +173,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/rapheal.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -202,8 +183,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/dami.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -212,8 +193,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/Preciouse.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -222,8 +203,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/ThankGod.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -232,8 +213,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/okoye.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -242,8 +223,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/moyo.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -252,8 +233,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/David.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -262,8 +243,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/dami.png">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -272,8 +253,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/Thank-G.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -282,8 +263,8 @@
                             Developer</strong><br></p>
                     <p></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
-                <div class="col-lg-3">
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <img class="image rounded-circle pt-1" width="300" height="300" img src="images/rapheal.jpg">
                     <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em"></text>
                     </img>
@@ -291,7 +272,7 @@
                     <p class="section__subtitle section__subtitle--intro"><strong>Full-Stack Web
                             Developer</strong><br></p>
                     <p><a class="btn btn-secondary" href="#" role="button">Visit my page &raquo;</a></p>
-                </div><!-- /.col-lg-3 -->
+                </div><!-- /.col-sm-12 col-md-6 col-lg-4 -->
             </div><!-- /.row -->
         </div>
         <!-- Body ends here -->
@@ -316,9 +297,10 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 
+    <script src="js/index.js"></script>
     <script src="js/typed.js"></script>
     <script>
         var typed = new Typed('.typed-word0', {
